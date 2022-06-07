@@ -19,6 +19,7 @@ struct ImageStructGenerator: ExternalOnlyStructGenerator {
   }
 
   func generatedStruct(at externalAccessLevel: AccessLevel, prefix: SwiftIdentifier) -> Struct {
+      print("Mahmoud is testing")
     let structName: SwiftIdentifier = "image"
     let qualifiedName = prefix + structName
     let assetFolderImageNames = assetFolders
